@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0%;
+                margin: 0%;
+                font-style: italic;
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 50px;
+                margin-top: 25px;
+            }
+            .container{
+                background-color:white;
+                width: 100%;
+                height: auto;
+            }
+            #row{
+                display: flex;
+            }
+            #row>div{
+                border: 2px solid black;
+                width: 33.33%;
+                height: fit-content;
+                margin-left: 2%;
+                margin-right: 2%;
+                background-color: gray;
+            }
+            #row>div>h3{
+                text-align: center;
+                border: 2px solid black;
+                margin-top: 0%;
+                margin-left: 65%;
+            }
+            .chicken{
+                color: rgb(0, 0, 0);
+                background-color: rgb(187, 92, 108);
+            }
+            .beef{
+                color: white;
+                background-color:red;
+            }
+            .sushi{
+                color: rgb(0, 0, 0);
+                background-color: rgb(209, 255, 6);
+            }
+            @media (min-width:992px){
+                .div1,.div2,.div3{
+                    float: left;
+                }
+                .div1{
+                    width: 31%;
+                }
+                .div2{
+                    width: 31%;
+                }
+                .div3{
+                    width: 31%;
+                }
+            }
+            @media (min-width:768px)and(max-width:991px){
+                .div1,.div2,.div3{
+                    float: left;
+                }
+                .div1{
+                    width: 48%;
+                }
+                .div2{
+                    width: 48%;
+                }
+                .div3{
+                    width: 98%;
+                }
+            }
+            @media (max-width:767px){
+                .div1,.div2,.div3{
+                    float: left;
+                }
+                .div1{
+                    width: 100%;
+                }
+                .div2{
+                    width: 100%;
+                }
+                .div3{
+                    width: 100%;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <div class="container">
+            <div id="row">
+                <div class="div1"><h3 class="chicken">Chicken</h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in cursus odio, sed tempor augue. Donec commodo, lorem in hendrerit luctus, purus elit porttitor augue, vel dapibus magna dui vitae justo. Vivamus tellus tortor, ornare sed lorem at, tincidunt mattis dolor. Quisque orci metus, lacinia vel tortor eget, pharetra aliquet leo. Donec sit amet facilisis massa. Etiam risus ipsum, commodo vitae tempus vitae, sollicitudin ut libero. Sed viverra et magna in fermentum. Nulla porta justo et dignissim malesuada. Donec dignissim ipsum arcu, sit amet pulvinar magna mollis sit amet. Mauris auctor fermentum faucibus. Sed suscipit elementum feugiat. Phasellus porta nisi urna, ac ornare ante accumsan sed.</br></div>
+                <div class="div2"><h3 class="beef">Beef</h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in cursus odio, sed tempor augue. Donec commodo, lorem in hendrerit luctus, purus elit porttitor augue, vel dapibus magna dui vitae justo. Vivamus tellus tortor, ornare sed lorem at, tincidunt mattis dolor. Quisque orci metus, lacinia vel tortor eget, pharetra aliquet leo. Donec sit amet facilisis massa. Etiam risus ipsum, commodo vitae tempus vitae, sollicitudin ut libero. Sed viverra et magna in fermentum. Nulla porta justo et dignissim malesuada. Donec dignissim ipsum arcu, sit amet pulvinar magna mollis sit amet. Mauris auctor fermentum faucibus. Sed suscipit elementum feugiat. Phasellus porta nisi urna, ac ornare ante accumsan sed.</br></div>
+                <div class="div3"><h3 class="sushi">Sushi</h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in cursus odio, sed tempor augue. Donec commodo, lorem in hendrerit luctus, purus elit porttitor augue, vel dapibus magna dui vitae justo. Vivamus tellus tortor, ornare sed lorem at, tincidunt mattis dolor. Quisque orci metus, lacinia vel tortor eget, pharetra aliquet leo. Donec sit amet facilisis massa. Etiam risus ipsum, commodo vitae tempus vitae, sollicitudin ut libero. Sed viverra et magna in fermentum. Nulla porta justo et dignissim malesuada. Donec dignissim ipsum arcu, sit amet pulvinar magna mollis sit amet. Mauris auctor fermentum faucibus. Sed suscipit elementum feugiat. Phasellus porta nisi urna, ac ornare ante accumsan sed.</br></div>
+            </div>
+        </div>
+    </body>
+</html>
