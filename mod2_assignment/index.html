@@ -1,106 +1,144 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-            *{
-                box-sizing: border-box;
-                padding: 0%;
-                margin: 0%;
-                font-style: italic;
-            }
-            h1{
-                text-align: center;
-                margin-bottom: 50px;
-                margin-top: 25px;
-            }
-            .container{
-                background-color:white;
-                width: 100%;
-                height: auto;
-            }
-            #row{
-                display: flex;
-            }
-            #row>div{
-                border: 2px solid black;
-                width: 33.33%;
-                height: fit-content;
-                margin-left: 2%;
-                margin-right: 2%;
-                background-color: gray;
-            }
-            #row>div>h3{
-                text-align: center;
-                border: 2px solid black;
-                margin-top: 0%;
-                margin-left: 65%;
-            }
-            .chicken{
-                color: rgb(0, 0, 0);
-                background-color: rgb(187, 92, 108);
-            }
-            .beef{
-                color: white;
-                background-color:red;
-            }
-            .sushi{
-                color: rgb(0, 0, 0);
-                background-color: rgb(209, 255, 6);
-            }
-            @media (min-width:992px){
-                .div1,.div2,.div3{
-                    float: left;
-                }
-                .div1{
-                    width: 31%;
-                }
-                .div2{
-                    width: 31%;
-                }
-                .div3{
-                    width: 31%;
-                }
-            }
-            @media (min-width:768px)and(max-width:991px){
-                .div1,.div2,.div3{
-                    float: left;
-                }
-                .div1{
-                    width: 48%;
-                }
-                .div2{
-                    width: 48%;
-                }
-                .div3{
-                    width: 98%;
-                }
-            }
-            @media (max-width:767px){
-                .div1,.div2,.div3{
-                    float: left;
-                }
-                .div1{
-                    width: 100%;
-                }
-                .div2{
-                    width: 100%;
-                }
-                .div3{
-                    width: 100%;
-                }
-            }
-        </style>
-
-    </head>
-    <body>
-        <h1>Our Menu</h1>
-        <div class="container">
-            <div id="row">
-                <div class="div1"><h3 class="chicken">Chicken</h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in cursus odio, sed tempor augue. Donec commodo, lorem in hendrerit luctus, purus elit porttitor augue, vel dapibus magna dui vitae justo. Vivamus tellus tortor, ornare sed lorem at, tincidunt mattis dolor. Quisque orci metus, lacinia vel tortor eget, pharetra aliquet leo. Donec sit amet facilisis massa. Etiam risus ipsum, commodo vitae tempus vitae, sollicitudin ut libero. Sed viverra et magna in fermentum. Nulla porta justo et dignissim malesuada. Donec dignissim ipsum arcu, sit amet pulvinar magna mollis sit amet. Mauris auctor fermentum faucibus. Sed suscipit elementum feugiat. Phasellus porta nisi urna, ac ornare ante accumsan sed.</br></div>
-                <div class="div2"><h3 class="beef">Beef</h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in cursus odio, sed tempor augue. Donec commodo, lorem in hendrerit luctus, purus elit porttitor augue, vel dapibus magna dui vitae justo. Vivamus tellus tortor, ornare sed lorem at, tincidunt mattis dolor. Quisque orci metus, lacinia vel tortor eget, pharetra aliquet leo. Donec sit amet facilisis massa. Etiam risus ipsum, commodo vitae tempus vitae, sollicitudin ut libero. Sed viverra et magna in fermentum. Nulla porta justo et dignissim malesuada. Donec dignissim ipsum arcu, sit amet pulvinar magna mollis sit amet. Mauris auctor fermentum faucibus. Sed suscipit elementum feugiat. Phasellus porta nisi urna, ac ornare ante accumsan sed.</br></div>
-                <div class="div3"><h3 class="sushi">Sushi</h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in cursus odio, sed tempor augue. Donec commodo, lorem in hendrerit luctus, purus elit porttitor augue, vel dapibus magna dui vitae justo. Vivamus tellus tortor, ornare sed lorem at, tincidunt mattis dolor. Quisque orci metus, lacinia vel tortor eget, pharetra aliquet leo. Donec sit amet facilisis massa. Etiam risus ipsum, commodo vitae tempus vitae, sollicitudin ut libero. Sed viverra et magna in fermentum. Nulla porta justo et dignissim malesuada. Donec dignissim ipsum arcu, sit amet pulvinar magna mollis sit amet. Mauris auctor fermentum faucibus. Sed suscipit elementum feugiat. Phasellus porta nisi urna, ac ornare ante accumsan sed.</br></div>
-            </div>
-        </div>
-    </body>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        p {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    padding-top: 25px;
+  
+    
+  }
+  .chicken {
+    letter-spacing: 1.5px;
+    border: 2px solid black;
+    position: absolute;
+    top: -19px;
+    right: 0px;
+    text-align: center;
+    background-color: rgb(189, 76, 129);
+    width: 25%;
+    height: 30px;
+    color: white;
+    font-family: Lucida Sans
+  }
+  .beef {
+    letter-spacing: 1.5px;
+    border: 2px solid black;
+    position: absolute;
+    top: -19px;
+    right: 0px;
+    text-align: center;
+    background-color: rgb(199, 88, 88);
+    width: 25%;
+    height: 30px;
+    color: white;
+    font-family: Lucida Sans;
+  }
+  .sushi {
+    border: 2px solid black;
+    position: absolute;
+    top:-19px;
+    right: 0px;
+    text-align: center;
+    background-color: rgb(230, 235, 159);
+    width: 25%;
+    height: 30px;
+    font-family: Lucida Sans;
+  }
+  .ert{
+    width: auto;
+  }
+  .sec1 {
+    background-color: grey;
+    border: 1px solid black;
+    position: relative;
+    margin: 1%;
+    right: 1%;
+    
+  }
+  .sec2 {
+    background-color: grey;
+    border: 1px solid black;
+    position: relative;
+    margin: 1%;
+    right: 1%;
+  }
+  .sec3 {
+    background-color: grey;
+    border: 1px solid black;
+    position: relative;
+    margin: 1%;
+    right: 1%;
+  }
+    
+    /**** Desktop view only ****/
+    @media (min-width: 992px) {
+    .sec1, .sec2, .sec3 {
+      float: left;
+    }
+    .sec1 {
+      width: 31%;
+    }
+    .sec2 {
+      width: 31%;
+    }
+    .sec3 {
+      width: 31%;
+    }
+  }
+  
+  /**** Tablet view only ****/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .sec1, .sec2, .sec3 {
+      float: left;
+    }
+   .sec1 {
+    width: 48%;
+    }
+    .sec2 {
+    width: 47.5%;
+    }
+    .sec3 {
+    width: 98%;
+    }
+     /**** Mobile view only ****/
+  @media (max-width: 767px) {
+    .sec1, .sec2, .sec3 {
+      float: left;
+    }
+    .sec1 {
+      width: 100%;
+    }
+    .sec2 {
+      width: 100%;
+    }
+    .sec3 {
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body class="ert">
+    <center><h1>Our Menu</h1></center>
+    <section class="sec1 ">
+        <h3 class="chicken">Chicken</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+    </section>
+    <section class="sec2 ">
+        <h3 class="beef">Beef</h3>  
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+    </section></section>
+    <section class="sec3 ">
+        <h3 class="sushi">Sushi</h3> 
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>  
+    </section>
+</body>
 </html>
